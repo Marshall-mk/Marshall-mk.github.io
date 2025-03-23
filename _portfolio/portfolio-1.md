@@ -1,7 +1,8 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "[Brain tissue segmentation using Multi-atlas and Deep learning approaches](https://github.com/Marshall-mk/MISA)"
+excerpt: "This project presents the development and evaluation of brain tissue segmentation approaches for MRI scans, focusing on cerebrospinal fluid (CSF), grey matter (GM), and white matter (WM). Using the IBSR 18 dataset, multiple segmentation frameworks were implemented, including classical intensity-based methods, atlas-based techniques, and deep learning models. Preprocessing steps addressed heterogeneity in pixel sizes and intensity distributions. Classical approaches such as Expectation-Maximization (EM) algorithms achieved average Dice scores of 0.5586–0.8730 across tissues, with improved performance when incorporating label propagation and anatomical priors. Multi-atlas methods outperformed classical approaches, achieving average Dice scores between 0.8177–0.8541, demonstrating the effectiveness of leveraging prior spatial information. Deep learning models, particularly the 2.5D U-Net, delivered superior performance with average Dice scores ranging from 0.8892–0.9261, surpassing both classical and atlas-based approaches. The ensemble of top-performing models further improved accuracy, achieving the highest average Dice score of 0.9215 across all tissue types. The results highlight the robustness of the 2.5D U-Net for brain tissue segmentation, especially in handling the challenges posed by CSF segmentation due to intensity overlaps. This study underscores the potential of combining deep learning architectures with ensemble strategies for enhanced performance in medical image segmentation tasks.[Paper](/files/MISA_FINAL_REPORT_MKH_FF.pdf)" 
+imageurl: <br/><img src='/files/MISA.png'>
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+<center><img src="/files/MISA.png"></center>
