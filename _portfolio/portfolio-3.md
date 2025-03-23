@@ -1,7 +1,7 @@
 ---
 title: "[Gastrointestinal Polyp Segmentation and Classification](https://github.com/Marshall-mk/polyp-detection)"
-excerpt: "Polyp detection; Polyp segmentation; Advanced Image Analysis; Machine Learning; Deep Learning. 
-[[Paper]](/files/polyp.pdf)" 
+excerpt: "This project develops an automated polyp detection system to combat rising colorectal cancer rates, using advanced image processing, machine learning, and deep learning. It features pipelines achieving 79.47% detection accuracy for segmentation and up to 96% classification accuracy with deep learning, outperforming manual methods. 
+[[Paper]](/files/polyp.pdf) <br/><img src='/files/polyp.png'>" 
 imageurl: <br/><img src='/files/polyp.png'>
 collection: portfolio
 ---
