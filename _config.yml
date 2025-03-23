@@ -24,7 +24,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Kabir Hamzah"
-  pronouns         : "he/him"  
+  pronouns         : # "he/him"  
   bio              : "Graduate Research Student"
   location         : "Earth"
   employer         : "Hong Kong Univesity of Science and Technology"
@@ -46,7 +46,7 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "Marshall-mk"
-  kaggle           : "kabirmuhammad"
+  kaggle           : # "kabirmuhammad"
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
@@ -57,9 +57,9 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "cleancoder.eth"
+  instagram        : # "cleancoder.eth"
   lastfm           : # Username
-  linkedin         : "muhammadkabirhamzah"
+  linkedin         : # "muhammadkabirhamzah"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -67,7 +67,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : "kabir_hamzah" # Username for X / Twitter
+  twitter          : # "kabir_hamzah" # Username for X / Twitter
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
