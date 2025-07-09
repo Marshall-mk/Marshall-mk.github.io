@@ -1,20 +1,11 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
-
-# Basic Site Settings
+# Jekyll Configuration for Modern Portfolio Site
 locale                   : "en-US"
-site_theme               : "default"
 title                    : "Kabir Hamzah Muhammad"
 title_separator          : "-"
 name                     : &name "Kabir Hamzah Muhammad"
-description              : &description "Research Student Medical Image Generation and  Interpretation at The Hong Knong University of Science and Technology"
-url                      : https://Marshall-mk.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+description              : &description "Graduate Research Student in Medical Imaging and AI at Hong Kong University of Science and Technology"
+url                      : https://Marshall-mk.github.io
+baseurl                  : ""
 repository               : "Marshall-mk.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -211,7 +202,7 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
+# Collections for portfolio and publications
 collections:
   publications:
     output: true
