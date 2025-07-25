@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Brain tissue segmentation using Multi-atlas and Deep learning approaches",
+    "description": "This project develops and evaluates brain tissue segmentation methods for MRI scans, targeting cerebrospinal fluid, grey matter, and white matter using the IBSR 18 dataset. It compares classical intensity-based methods (Dice scores 0.5586–0.8730), multi-atlas techniques (0.8177–0.8541), and deep learning models, with the 2.5D U-Net achieving the highest scores (0.8892–0.9261) and an ensemble reaching 0.9215. The study highlights the 2.5D U-Net’s superior performance, particularly for challenging CSF segmentation, emphasizing the value of deep learning and ensemble strategies in medical imaging. ",
+    "tags": ["Python", "TensorFlow", "Medical Imaging", "Deep Learning", "Multi-atlas"],
+    "image": "files/MISA.png",
+    "github": "https://github.com/Marshall-mk/MISA",
+    "paper": "files/MISA_FINAL_REPORT_MKH_FF_DR.pdf"
+  },
+  {
+    "title": "Lung CT Volume Registration: Medical Image Registration and Applications]",
+    "description": "This project focuses on lung CT image registration using intensity-based and deep learning techniques on a dataset of 4 volumetric scan pairs with landmark annotations. By optimizing parameters and integrating lung segmentation masks, the registration accuracy improved, reducing the mean Target Registration Error (TRE) to 1.44 mm, with a standard deviation of 1.77 mm and an execution time of 250 seconds per case.",
+    "tags": ["Python", "TensorFlow", "Medical Imaging", "DICOM", "Registration"],
+    "image": "files/MIRA.png",
+    "github": "https://github.com/Marshall-mk/MIRA",
+    "paper": "files/MIRA_FINAL_REPORT_MKH_FF.pdf"
+  },
+  {
+    "title": "Gastrointestinal Polyp Segmentation and Classification",
+    "description": "This project develops an automated polyp detection system to combat rising colorectal cancer rates, using advanced image processing, machine learning, and deep learning. It features pipelines achieving 79.47% detection accuracy for segmentation and up to 96% classification accuracy with deep learning, outperforming manual methods.",
+    "tags": ["Computer Vision", "Opencv", "Image Processing"],
+    "image": "files/polyp.png",
+    "github": "https://github.com/Marshall-mk/polyp-detection",
+    "paper": "files/polyp.pdf"
+  },
+  {
+    "title": "Dental Assistant Robot for Surgical Procedures",
+    "description": "This project develops a dental assistant robot using the Staubli TX60 to automate anesthesia delivery and suction during dental procedures, aiming to enhance efficiency and reduce dentist fatigue. Programmed with VAL 3 and tested on a skeleton head model, the robot achieves these tasks with a user interface, syringe, suction tool, and features like progress indicators, achieving a repeatability of ±0.02 mm. While successful in a controlled setting, the industrial robot lacks the precision and adaptability needed for real patients, highlighting its potential as a foundation for future dental automation advancements.",
+    "tags": ["Robotics", "VAL3", "Computer assisted Surgery", "Automation"],
+    "image": "files/casmr.png",
+    "github": "https://github.com/Marshall-mk/CASMR",
+    "demo": "https://your-demo-link.com"
+  },
+  {
+    "title": "Chest Insight: Smart Chest Xray Analysis and Report Generation",
+    "description": "Led a team of 6 in the development of Chest Insight, a groundbreaking application for chest X-ray analysis and report generation. Orchestrated the full project lifecycle, including: DICOM image anonymization for patient privacy and regulatory compliance. Image annotation and enhancement to improve diagnostic accuracy. Utilized natural language processing and deep learning techniques inspired by [IERRG](https://github.com/ttanida/rgrg) for automated report generation.",
+    "tags": ["Pytorch", "Streamlit", "Docker", "DICOM", "Data Engineering"],
+    "image": "files/chestinsight.png",
+    "github": "https://github.com/Marshall-mk/ChestInsight"
+  },
+  {
+    "title": "AidGenie",
+    "description": "Developed a fully functional web-based application with the following features: • DICOM image visualization and anonymization • Image annotation: Tagging and Segmentation. • Medical image conversion and compression. • Medical imaging research helper.",
+    "tags": ["Python", "Streamlit", "Docker", "DICOM", "Data Engineering"],
+    "image": "files/aidgenie.png",
+    "github": "https://github.com/Marshall-mk/aidgenie"
+  },
+  {
+    "title": "Covid Detection in X-ray Images with Grad-CAM Explainer",
+    "description": "Implemented a deep learning pipeline and web app to enable the detection of Covid using X-ray image data, an explainer was built to identify regions the model considered when making predictions. The model built achieved a validation precision and recall of over 85%",
+    "tags": ["Python", "TensorFlow", "Medical Imaging", "Deep Learning"],
+    "image": "files/cam.png",
+    "github": "https://github.com/Marshall-mk/Covid-Classifier-and-Grad-cam"
+  },
+  {
+    "title": "Implementation of a Deep Learning-enabled Brain Tumor Detection and Segmentation Device",
+    "description": "Built and deployed an ensemble of deep learning (CNNs & Res-Unet) models to detect, classify and segment brain tumors in magnetic resonance brain scans on a raspberryPi module coupled with a webapp made with DASH. The model achieved a 96% classification accuracy and segmentation 98.58% accuracy.",
+    "tags": ["Python", "TensorFlow", "Medical Imaging", "Deep Learning"], 
+    "image": "files/mri.png",
+    "github": "https://github.com/Marshall-mk/Brain-tumor-classification-using-MR-images"
+  },
+  {
+    "title": "Fetal Health Classifier Pipeline",
+    "description": "Built an ML model pipeline to demonstrate a complete end-end MLOps pipeline using git, dvc, dagshub, mlflow, FastAPI and Docker. The trained model achieved a 93% f1-score.",
+    "tags": ["Python", "Sklearn", "Medical Imaging", "MLOps"],
+    "github": "https://github.com/Marshall-mk/fetal-health"
+  }
+]

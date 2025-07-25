@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Medical Image Generation",
+    "description": "Developing advanced deep learning algorithms such as diffusion models and flow matching for generating synthetic medical images and videos to augment datasets, improve model training, and enhance diagnostic capabilities.",
+    "icon": "fas fa-image"
+  },
+  {
+    "title": "Medical Image Interpretation",
+    "description": "Using advanced deep learning techniques to interpret complex medical images, enhancing diagnostic capabilities and clinical decision-making.",
+    "icon": "fas fa-stethoscope"
+  },
+  {
+    "title": "Federated Learning in Medical Imaging",
+    "description": "Implementing federated learning approaches to train models on distributed medical imaging data while preserving patient privacy and data security.",
+    "icon": "fas fa-network-wired"
+  },
+  {
+    "title": "Resource-efficient Medical Imaging",
+    "description": "Developing lightweight and efficient models for medical imaging tasks to enable deployment on resource-constrained devices, ensuring accessibility in diverse healthcare settings.",
+    "icon": "fas fa-battery-half"
+  },
+  {
+    "title": "Medical Imaging Data Privacy",
+    "description": "Implementing advanced techniques to ensure the privacy and security of medical imaging data, including encryption, anonymization, and secure data sharing protocols.",
+    "icon": "fas fa-lock"
+  },
+  {
+    "title": "LLMs and VLMs in Medical Imaging",
+    "description": "Exploring the integration of large language models (LLMs) and vision-language models (VLMs) in medical imaging tasks, enhancing the understanding and interpretation of complex medical data.",
+    "icon": "fas fa-language"
+  }
+]

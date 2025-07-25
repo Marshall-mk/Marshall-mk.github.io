@@ -1,89 +1,177 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Medical Imaging Portfolio Website
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+A modern, responsive portfolio website designed for medical imaging and application researchers. Built with HTML5, CSS3, and vanilla JavaScript with markdown support for easy content updates.
 
-# Getting Started
+## Features
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+- **Modern Design**: Clean, aesthetic design with smooth animations and transitions
+- **Fully Responsive**: Optimized for all devices (desktop, tablet, mobile)
+- **Easy Content Management**: Update content through simple markdown and JSON files
+- **Dynamic Loading**: Content loads dynamically from markdown files
+- **GitHub Pages Ready**: Configured for easy deployment on GitHub Pages
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
+- **Accessibility**: WCAG compliant with proper ARIA labels
 
-See more info at https://academicpages.github.io/
+## Quick Setup
 
-## Running locally
+1. **Fork this repository** to your GitHub account
+2. **Rename the repository** to `yourusername.github.io` (replace `yourusername` with your actual GitHub username)
+3. **Enable GitHub Pages** in repository settings
+4. **Customize your content** by editing the files in the `content/` directory
+5. **Add your profile image** as `assets/images/profile.jpg`
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+## Content Customization
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+### Personal Information
+- Edit `content/hero.md` for your hero section description
+- Edit `content/about.md` for your detailed about section
+- Update `content/contact.json` with your email and location
+- Update `content/social.json` with your social media links
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+### Professional Content
+- **Stats**: Update `content/stats.json` with your publication count, projects, and experience
+- **Research**: Edit `content/research.json` to showcase your research interests
+- **Projects**: Update `content/projects.json` with your featured projects
+- **Publications**: Edit `content/publications.json` with your academic publications
+- **Achievements**: Update `content/achievements.json` with your milestones
+- **News**: Edit `content/news.json` for latest updates
+- **Blog**: Update `content/blog.json` with your blog posts
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and open `.gitignore` then add `vendor` inside it.
+### Images and Files
+- Replace `assets/images/profile.jpg` with your professional photo
+- Add project images to `files/` directory (e.g., `files/project-name.jpg`)
+- Add your research papers and documents to `files/` directory (e.g., `files/paper-name.pdf`)
+- Reference these files in your JSON content files using relative paths like `"files/filename.ext"`
+- Blog images can also be stored in `files/` directory
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+## File Structure
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-docker compose up
+```
+portfolio-website/
+├── index.html              # Main HTML file
+├── css/
+│   └── style.css          # Main stylesheet
+├── js/
+│   └── main.js            # JavaScript functionality
+├── content/               # Content files (easily editable)
+│   ├── hero.md           # Hero section content
+│   ├── about.md          # About section content
+│   ├── stats.json        # Statistics numbers
+│   ├── research.json     # Research interests
+│   ├── projects.json     # Featured projects
+│   ├── publications.json # Academic publications
+│   ├── achievements.json # Timeline of achievements
+│   ├── news.json         # Latest news items
+│   ├── blog.json         # Blog posts
+│   ├── contact.json      # Contact information
+│   └── social.json       # Social media links
+├── files/                 # Your files (PDFs, project images, etc.)
+│   ├── MISA_FINAL_REPORT_MKH_FF_DR.pdf  # Research papers
+│   ├── brain-segmentation-project.jpg   # Project screenshots
+│   └── [other files...]   # Other project files and images
+├── assets/
+│   └── images/           # Website assets (profile photo, etc.)
+└── README.md            # This file
 ```
 
-You should now be able to access the website from `localhost:4000`.
+## Customization Guide
 
-# Maintenance
+### Colors and Styling
+- Primary color: `#3498db` (blue)
+- Accent color: `#9b59b6` (purple)
+- Background: `#ffffff` (white)
+- Text: `#333333` (dark gray)
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+To change colors, edit the CSS variables in `css/style.css`.
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+### Adding New Sections
+1. Add HTML structure to `index.html`
+2. Add corresponding styles to `css/style.css`
+3. Add JavaScript functionality to `js/main.js`
+4. Create content files in the `content/` directory
 
-## Bugfixes and enhancements
+### Social Media Links
+Update `content/social.json` with your profiles:
+```json
+{
+  "linkedin": "https://linkedin.com/in/your-profile",
+  "github": "https://github.com/your-username",
+  "twitter": "https://twitter.com/your-handle",
+  "orcid": "https://orcid.org/0000-0000-0000-0000",
+  "scholar": "https://scholar.google.com/citations?user=your-id"
+}
+```
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+### Contact Form
+The contact form includes basic client-side handling. For full functionality, you may want to integrate with services like:
+- Formspree
+- Netlify Forms
+- EmailJS
+- Your own backend service
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## GitHub Pages Deployment
+
+1. **Repository Setup**:
+   - Repository name must be `yourusername.github.io`
+   - Make sure the repository is public
+
+2. **Enable GitHub Pages**:
+   - Go to repository Settings
+   - Scroll to Pages section
+   - Source: Deploy from a branch
+   - Branch: main (or master)
+   - Folder: / (root)
+
+3. **Custom Domain** (optional):
+   - Add `CNAME` file with your domain name
+   - Configure DNS settings with your domain provider
+
+## Browser Compatibility
+
+- Chrome/Chromium 60+
+- Firefox 55+
+- Safari 11+
+- Edge 79+
+
+## Performance Features
+
+- Optimized images and assets
+- Efficient CSS and JavaScript
+- Lazy loading for images
+- Smooth scrolling and animations
+- Mobile-first responsive design
+
+## SEO Features
+
+- Semantic HTML structure
+- Meta tags for social sharing
+- Proper heading hierarchy
+- Alt texts for images
+- Structured data markup ready
+
+## Accessibility Features
+
+- WCAG 2.1 AA compliant
+- Keyboard navigation support
+- Screen reader friendly
+- High contrast ratios
+- Focus indicators
+
+## Contributing
+
+Feel free to fork this project and customize it for your own use. If you make improvements that could benefit others, pull requests are welcome!
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Support
+
+If you have questions or need help customizing the website, feel free to:
+- Open an issue on GitHub
+- Check the code comments for guidance
+- Refer to the documentation in this README
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+**Happy coding and best of luck with your career!** 🚀

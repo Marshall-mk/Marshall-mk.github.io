@@ -1,0 +1,70 @@
+about.md and hero.md
+stats.json
+
+achievements.json
+
+ {
+   "date": "July 2025",
+   "title": "Africa International PGR Scholarship",
+   "description": "Received the Africa International PGR Scholarship to support my PhD studies at King's College London, focusing on resource-efficient medical imaging techniques."
+},
+
+Blogs.json
+[
+  {
+    "title": "The Future of AI in Medical Imaging: Opportunities and Challenges",
+    "excerpt": "Exploring the current state and future prospects of artificial intelligence in medical imaging, discussing both the tremendous opportunities and the challenges we face in implementation.",
+    "date": "January 15, 2024",
+    "url": "https://your-blog-link.com/ai-medical-imaging-future",
+    "image": null
+  }
+]
+
+education.json
+  {
+    "period": "2025 - 2029 (Expected)",
+    "degree": "Doctor of Philosophy (PhD) in Medical Imaging",
+    "institution": "King's College London",
+    "location": "London, United Kingdom",
+    "description": "PhD research focusing on resource-efficient medical imaging techniques, supported by the Africa International PGR Scholarship.",
+    "achievements": [
+      "Africa International PGR Scholarship recipient",
+      "Research focus on resource-efficient deep learning for medical imaging",
+      "Collaboration with leading medical imaging researchers"
+    ]
+  },
+
+
+news.json
+
+  {
+    "date": "October 2025",
+    "title": "Started PhD in Medical Imaging",
+    "description": "Commenced my PhD journey focusing on resource efficient medical imaging techniques at King's College London."
+  },
+  {
+    "date": "July 2025",
+    "title": "Paper Accepted to AMAI (MICCAI) 2025",
+    "description": "Our research on 'Pathology-Conditioned Echocardiogram Video Synthesis' has been accepted for presentation at the 2025 International Conference on Artificial Intelligence in Medicine"
+  },
+  
+publication.json
+
+[
+  {
+    "title": "Echopath: Pathology-Conditioned Echocardiogram Video Synthesis",
+    "description": "Developed a novel framework for synthesizing echocardiogram videos conditioned on pathology labels, enhancing the training of deep learning models for cardiac disease detection.",
+    "authors": "Kabir Muhammad, Xiaomeng Li, Marwan Elbatel",
+    "venue": "AMAI (MICCAI) 2025",
+    "year": "2025",
+    "pdf": "https://your-paper-link.com/paper1.pdf",
+    "doi": "https://doi.org/10.1000/xyz123",
+    "bibtex": "https://your-paper-link.com/paper1.bib"
+  }
+  
+]
+
+
+social.json
+  "orcid": "https://orcid.org/0000-0000-0000-0000",
+  "scholar": "https://scholar.google.com/citations?user=your-id"

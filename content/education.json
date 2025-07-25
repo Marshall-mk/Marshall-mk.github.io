@@ -1,0 +1,46 @@
+[
+
+  {
+    "period": "2025",
+    "degree": "Research Student in Medical Imaging and Applications",
+    "institution": "Hong Kong University of Science and Technology",
+    "location": "Hong Kong",
+    "description": "Research focused on medical image synthesis and interpretation using advanced deep learning techniques under the supervision of Prof. Xiaomeng Li.",
+    "achievements": [
+      "Published research on pathology-conditioned echocardiogram video synthesis",
+      "Paper accepted to AMAI (MICCAI) 2025"
+    ]
+  },
+  {
+    "period": "2023 - 2025",
+    "degree": "Master of Science in Medical Imaging and Applications (MAIA)",
+    "institution": "University of Burgundy (France), University of Cassino (Italy), University of Girona (Spain)",
+    "location": "Europe (Erasmus+ Program)",
+    "description": "Joint European Master's program in Medical Imaging and Applications, combining advanced coursework in medical image processing, machine learning, and clinical applications across three prestigious European universities.",
+    "achievements": [
+      "Erasmus+ Scholarship recipient",
+      "Completed thesis with distinction",
+      "Winner of Medical Image Registration and Application Challenge",
+      "First Runner-up in Computer Aided Diagnostic Challenge",
+      "Specialized in deep learning for medical image segmentation",
+      "International multicultural academic experience",
+      "Advanced coursework in medical image processing and AI"
+    ]
+  },
+  {
+    "period": "2016 - 2022",
+    "degree": "Bachelor of Engineering in Biomedical Engineering",
+    "institution": "University of Ilorin",
+    "location": "Ilorin, Nigeria",
+    "description": "Comprehensive undergraduate program in biomedical engineering with focus on medical devices, signal processing, and healthcare technology.",
+    "achievements": [
+      "Best Graduating Student in Biomedical Engineering Department",
+      "Vice Chancellor's Award for Academic Excellence",
+      "Senate Annual Prize for First Class Honors",
+      "Best Student Award for 4 consecutive years (200L-500L)",
+      "Federal Scholarship Award recipient",
+      "NSBE Award for Academic Excellence",
+      "First Class Honors with distinction"
+    ]
+  }
+]

@@ -3,252 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kabir Hamzah Muhammad - Medical AI Researcher</title>
-    <meta name="description" content="Graduate Research Student in Medical Imaging and AI at Hong Kong University of Science and Technology">
-    <link rel="stylesheet" href="assets/css/modern-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Kabir Muhammad - Medical Imaging & Application Researcher</title>
+    <meta name="description" content="Portfolio of a Medical Imaging and Application researcher">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Marked.js for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <h1>Kabir Hamzah</h1>
-                </div>
-                <div class="nav-menu" id="nav-menu">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#research" class="nav-link">Research</a>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                    <a href="#publications" class="nav-link">Publications</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Kabir Muhammad</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
                 <div class="nav-toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            <span class="gradient-text">Medical AI Researcher</span>
-                            <br>& Computer Vision Specialist
-                        </h1>
-                        <p class="hero-subtitle">
-                            Graduate Research Student at Hong Kong University of Science and Technology, 
-                            specializing in medical image synthesis and interpretation using advanced deep learning techniques.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                        </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text"></span>
+                    </h1>
+                    <p class="hero-subtitle">Medical Imaging & Applications Researcher</p>
+                    <p class="hero-description" id="hero-description">
+                        Loading description...
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
-                    <div class="hero-image">
-                        <div class="image-container">
-                            <img src="images/profile.png" alt="Kabir Hamzah Muhammad" class="profile-image">
-                        </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" data-social="github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" data-social="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-social="orcid"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="social-link" data-social="scholar"><i class="fas fa-graduation-cap"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            I am a Research Student in Medical Imaging and Applications at the Hong Kong University of Science and Technology 
-                            under the supervision of Prof. Xiaomeng Li, anticipating completion of my Master's degree in June 2025.
-                        </p>
-                        <p>
-                            My research interests include medical image synthesis and interpretation using advanced deep learning techniques. 
-                            I also explore resource-efficient deep learning methods and machine learning operations. My journey encompasses 
-                            rigorous internships as well as personal research where I honed my skills in generative AI, MLOps, and data pipelines, 
-                            vital for modern medical diagnostics.
-                        </p>
-                        <p>
-                            The drive to integrate AI into healthcare propels my research, focusing on transformative machine learning applications 
-                            for medical imaging. This work is supported by a strong foundation in Biomedical Engineering from the University of 
-                            Ilorin and reinforced by multiple honors for academic excellence.
-                        </p>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/images/profile.jpg" alt="Your Name" class="profile-img">
+                        <div class="image-overlay"></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-        <section id="research" class="research">
-            <div class="container">
-                <h2 class="section-title">Research Interests</h2>
-                <div class="research-grid">
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <h3>Computer Vision</h3>
-                        <p>Deep Learning, Pattern Recognition, and Advanced Image Processing</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" id="about-content">
+                    Loading about content...
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="0">0</span>
+                        <span class="stat-label">Publications</span>
                     </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <h3>Medical AI</h3>
-                        <p>Application of AI in Healthcare and Medical Imaging Solutions</p>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="0">0</span>
+                        <span class="stat-label">Projects</span>
                     </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>Multi-modal AI</h3>
-                        <p>Vision-Language Modeling and Image Synthesis</p>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="0">0</span>
+                        <span class="stat-label">Years Experience</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="files/MISA.png" alt="Brain Tissue Segmentation">
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>Brain Tissue Segmentation</h3>
-                            <p>Multi-atlas and Deep learning approaches for MRI brain tissue segmentation using 2.5D U-Net achieving 0.8892–0.9261 Dice scores.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">Deep Learning</span>
-                                <span class="tag">Medical Imaging</span>
-                                <span class="tag">U-Net</span>
-                            </div>
-                            <div class="portfolio-links">
-                                <a href="https://github.com/Marshall-mk/MISA" class="btn btn-small">View Code</a>
-                                <a href="files/MISA_FINAL_REPORT_MKH_FF_DR.pdf" class="btn btn-small btn-outline">Paper</a>
-                            </div>
-                        </div>
+    <!-- Education Section -->
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline" id="education-timeline">
+                Loading education history...
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="research-grid" id="research-grid">
+                Loading research interests...
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                Loading projects...
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-list" id="publications-list">
+                Loading publications...
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-timeline" id="achievements-timeline">
+                Loading achievements...
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid" id="news-grid">
+                Loading news...
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="section-title">Recent Blog Posts</h2>
+            <div class="blog-grid" id="blog-grid">
+                Loading blog posts...
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span id="contact-email">khmuhammad@connect.ust.hk</span>
                     </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="files/MIRA.png" alt="Medical Image Registration">
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>Medical Image Registration</h3>
-                            <p>Advanced medical image registration techniques and applications for improved diagnostic accuracy.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">Image Registration</span>
-                                <span class="tag">Medical AI</span>
-                                <span class="tag">Computer Vision</span>
-                            </div>
-                            <div class="portfolio-links">
-                                <a href="#" class="btn btn-small">View Project</a>
-                                <a href="files/MIRA_FINAL_REPORT_MKH_FF.pdf" class="btn btn-small btn-outline">Paper</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="files/chestinsight.png" alt="Chest Insight">
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>Chest Insight</h3>
-                            <p>AI-powered chest X-ray analysis system for automated diagnostic assistance and medical image interpretation.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">Medical AI</span>
-                                <span class="tag">X-ray Analysis</span>
-                                <span class="tag">Deep Learning</span>
-                            </div>
-                            <div class="portfolio-links">
-                                <a href="#" class="btn btn-small">View Project</a>
-                                <a href="#" class="btn btn-small btn-outline">Demo</a>
-                            </div>
-                        </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="contact-location">Hong Kong</span>
                     </div>
                 </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="publications" class="publications">
-            <div class="container">
-                <h2 class="section-title">Publications & Achievements</h2>
-                <div class="achievements-grid">
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Challenge Winner</h3>
-                        <p>Medical Image Registration and Application (MAIA 8)</p>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                        <h3>First Runner-up</h3>
-                        <p>Computer Aided Diagnostic (MAIA 8)</p>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Erasmus Mundus Scholar</h3>
-                        <p>Medical Imaging and Applications (2023-2025 Cohort)</p>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h3>Best Graduating Student</h3>
-                        <p>Biomedical Engineering, University of Ilorin (2020/2021)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Let's Connect</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <p>I'm always interested in discussing research opportunities, collaborations, or innovative projects in medical AI.</p>
-                        <div class="contact-links">
-                            <a href="mailto:khmuhammad@connect.ust.hk" class="contact-link">
-                                <i class="fas fa-envelope"></i>
-                                <span>khmuhammad@connect.ust.hk</span>
-                            </a>
-                            <a href="https://github.com/Marshall-mk" class="contact-link">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ" class="contact-link">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>Google Scholar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Kabir Hamzah Muhammad. All rights reserved.</p>
-                <p>Graduate Research Student at Hong Kong University of Science and Technology</p>
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" data-social="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" data-social="github"><i class="fab fa-github"></i></a>
+                    <a href="#" data-social="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
