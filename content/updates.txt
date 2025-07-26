@@ -9,17 +9,6 @@ achievements.json
    "description": "Received the Africa International PGR Scholarship to support my PhD studies at King's College London, focusing on resource-efficient medical imaging techniques."
 },
 
-Blogs.json
-[
-  {
-    "title": "The Future of AI in Medical Imaging: Opportunities and Challenges",
-    "excerpt": "Exploring the current state and future prospects of artificial intelligence in medical imaging, discussing both the tremendous opportunities and the challenges we face in implementation.",
-    "date": "January 15, 2024",
-    "url": "https://your-blog-link.com/ai-medical-imaging-future",
-    "image": null
-  }
-]
-
 education.json
   {
     "period": "2025 - 2029 (Expected)",
@@ -34,7 +23,20 @@ education.json
     ]
   },
 
-
+Experience.json
+   {
+        "period": "July 2022 - November 2022",
+        "position": "Machine Learning Intern",
+        "company": "TechPet Global",
+        "location": "Nigeria",
+        "description": "Worked on developing automated diagnostic systems for medical imaging applications.",
+        "achievements": [
+             "Implemented and evaluated machine learning algorithms to solve diverse petrochemical industrial problems and developed customized applications for critical predictions.",
+            "Led a team of 5 to participate in the 2022 Shell EV Hackathon, achieving a top 85 percentile globally."
+        ],
+        "technologies": ["Python", "Scikit-learn", "OpenCV", "Docker", "AWS"]
+    },
+    
 news.json
 
   {

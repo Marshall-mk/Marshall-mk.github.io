@@ -24,15 +24,38 @@
                 <a href="#home">Kabir Muhammad</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#research" class="nav-link">Research</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#publications" class="nav-link">Publications</a>
-                <a href="#news" class="nav-link">News</a>
-                <a href="#blog" class="nav-link">Blog</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link" title="Home">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#about" class="nav-link" title="About">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="#education" class="nav-link" title="Education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="nav-text">Education</span>
+                </a>
+                <a href="#experience" class="nav-link" title="Experience">
+                    <i class="fas fa-briefcase"></i>
+                    <span class="nav-text">Experience</span>
+                </a>
+                <a href="#research" class="nav-link" title="Research">
+                    <i class="fas fa-microscope"></i>
+                    <span class="nav-text">Research</span>
+                </a>
+                <a href="#projects" class="nav-link" title="Projects">
+                    <i class="fas fa-code"></i>
+                    <span class="nav-text">Projects</span>
+                </a>
+                <a href="#publications" class="nav-link" title="Publications">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="nav-text">Publications</span>
+                </a>
+                <a href="#news" class="nav-link" title="News">
+                    <i class="fas fa-newspaper"></i>
+                    <span class="nav-text">News</span>
+                </a>
             </div>
             <div class="nav-actions">
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
@@ -61,7 +84,7 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="#about" class="btn btn-primary">Learn More</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="mailto:khmuhammad@connect.ust.hk" class="btn btn-secondary">Get In Touch</a>
                     </div>
                     <div class="social-links">
                         <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin"></i></a>
@@ -120,6 +143,16 @@
         </div>
     </section>
 
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-timeline" id="experience-timeline">
+                Loading work experience...
+            </div>
+        </div>
+    </section>
+
     <!-- Research Interests Section -->
     <section id="research" class="section">
         <div class="container">
@@ -133,7 +166,17 @@
     <!-- Featured Projects Section -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-navigation">
+                    <button class="scroll-btn scroll-left" id="scroll-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" id="scroll-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
             <div class="projects-grid" id="projects-grid">
                 Loading projects...
             </div>
@@ -170,49 +213,6 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-        <div class="container">
-            <h2 class="section-title">Recent Blog Posts</h2>
-            <div class="blog-grid" id="blog-grid">
-                Loading blog posts...
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-dark">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span id="contact-email">khmuhammad@connect.ust.hk</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span id="contact-location">Hong Kong</span>
-                    </div>
-                </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">

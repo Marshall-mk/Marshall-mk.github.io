@@ -1,0 +1,33 @@
+[
+    {
+        "period": "July 2024 - September 2024",
+        "position": "Machine Learning Intern",
+        "company": "SurgAR",
+        "location": "France",
+        "achievements": [
+            "Annotation of surgical videos and deployment of optimized deep learning models for surgical video classification on a C++ platform."
+        ],
+        "technologies": ["Python", "TensorFlow", "PyTorch", "OpenCV", "C++"]
+    },
+    {
+        "period": "July 2022 - November 2022",
+        "position": "Machine Learning Intern",
+        "company": "TechPet Global",
+        "location": "Nigeria",
+        "achievements": [
+             "Implemented and evaluated machine learning algorithms to solve diverse petrochemical industrial problems and developed customized applications for critical predictions.",
+            "Led a team of 5 to participate in the 2022 Shell EV Hackathon, achieving a top 85 percentile globally."
+        ],
+        "technologies": ["Python", "Scikit-learn", "OpenCV", "Docker", "AWS"]
+    },
+    {
+        "period": "August 2019 - September 2020",
+        "position": "Student Intern",
+        "company": "Harmony Advanced Diagnostics Centre",
+        "location": "Nigeria",
+        "achievements": [
+            "Collaborated with maintenance engineers to diagnose, repair, and maintain various medical imaging machines, including MRI, CT, XRAY, FLUOROSCOPY, and MAMMOGRAPHY.",
+            "Operated biomedical equipment in the medical imaging unit and processed patient data to support clinical operations."
+        ]
+    }
+]

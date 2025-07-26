@@ -217,13 +217,12 @@ class PortfolioSite {
                 this.loadHeroContent(),
                 this.loadAboutContent(),
                 this.loadEducationContent(),
+                this.loadExperienceContent(),
                 this.loadResearchContent(),
                 this.loadProjectsContent(),
                 this.loadPublicationsContent(),
                 this.loadAchievementsContent(),
                 this.loadNewsContent(),
-                this.loadBlogContent(),
-                this.loadContactContent(),
                 this.loadSocialLinks()
             ]);
         } catch (error) {
@@ -328,6 +327,47 @@ class PortfolioSite {
         `).join('');
         
         console.log(`Education content loaded successfully: ${education.length} degrees`);
+    }
+
+    async loadExperienceContent() {
+        console.log('Loading experience content...');
+        const experience = await this.loadJSONFile('experience.json');
+        const container = document.getElementById('experience-timeline');
+        
+        if (!experience) {
+            console.error('Experience data is null or empty');
+            return;
+        }
+        
+        if (!container) {
+            console.error('Experience container not found');
+            return;
+        }
+
+        container.innerHTML = experience.map((exp, index) => `
+            <div class="experience-item">
+                <div class="experience-content fade-in visible">
+                    <span class="experience-period">${exp.period}</span>
+                    <h3 class="experience-position">${exp.position}</h3>
+                    <p class="experience-company">${exp.company}</p>
+                    <p class="experience-location">${exp.location}</p>
+                    ${exp.description ? `<p class="experience-description">${exp.description}</p>` : ''}
+                    ${exp.achievements && exp.achievements.length > 0 ? `
+                        <ul class="experience-achievements">
+                            ${exp.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+                        </ul>
+                    ` : ''}
+                    ${exp.technologies && exp.technologies.length > 0 ? `
+                        <div class="experience-technologies">
+                            ${exp.technologies.map(tech => `<span class="experience-tech">${tech}</span>`).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+                <div class="experience-marker"></div>
+            </div>
+        `).join('');
+        
+        console.log(`Experience content loaded successfully: ${experience.length} positions`);
     }
 
     async loadResearchContent() {
@@ -502,11 +542,8 @@ class PortfolioSite {
     }
 
     setupEventListeners() {
-        // Contact form
-        const contactForm = document.getElementById('contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', this.handleContactForm.bind(this));
-        }
+        // Projects scroll buttons
+        this.setupProjectsScrolling();
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -543,6 +580,43 @@ class PortfolioSite {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
         }, 2000);
+    }
+
+    setupProjectsScrolling() {
+        const projectsGrid = document.getElementById('projects-grid');
+        const scrollLeftBtn = document.getElementById('scroll-left');
+        const scrollRightBtn = document.getElementById('scroll-right');
+
+        if (!projectsGrid || !scrollLeftBtn || !scrollRightBtn) return;
+
+        const scrollAmount = 370; // Card width + gap
+
+        scrollLeftBtn.addEventListener('click', () => {
+            projectsGrid.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+            projectsGrid.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        // Update button states based on scroll position
+        const updateScrollButtons = () => {
+            const { scrollLeft, scrollWidth, clientWidth } = projectsGrid;
+            
+            scrollLeftBtn.disabled = scrollLeft <= 0;
+            scrollRightBtn.disabled = scrollLeft >= scrollWidth - clientWidth - 1;
+        };
+
+        projectsGrid.addEventListener('scroll', updateScrollButtons);
+        
+        // Initial button state
+        setTimeout(updateScrollButtons, 1000); // Wait for content to load
     }
 
     showLoadingSpinner() {
